@@ -39,5 +39,6 @@ module.exports = {
   modules: [
     'bootstrap-vue/nuxt',
   ],
+  mode: 'spa',
 }
 
