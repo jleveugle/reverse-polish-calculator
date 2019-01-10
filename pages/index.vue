@@ -121,8 +121,9 @@ export default {
       this.operation = [];
     },
     clear() {
-      this.trace = '';
+      this.currentOperand = '';
       this.stack = [];
+      this.operation = [];
       this.result = 0;
     },
     space() {
