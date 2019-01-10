@@ -1,3 +1,9 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/reverse-polish-calculator/'
+  }
+} : {}
+
 module.exports = {
   /*
   ** Headers of the page
@@ -40,5 +46,6 @@ module.exports = {
     'bootstrap-vue/nuxt',
   ],
   mode: 'spa',
+  ...routerBase
 }
 
