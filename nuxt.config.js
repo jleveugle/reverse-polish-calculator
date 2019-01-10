@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'A calculator using reverse polish notation' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' },
     ]
   },
   /*
@@ -34,6 +35,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  modules: [
+    'bootstrap-vue/nuxt',
+  ],
 }
 
