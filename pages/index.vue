@@ -15,7 +15,7 @@
           <strong class="d-block">{{ this.stack[0] || 0 }}</strong>
         </div>
         <div class="row no-gutters">
-          <div class="col-md-9">
+          <div class="col-8 col-md-9">
             <div class="row no-gutters bg-light">
               <div class="col-4 mx-auto" v-for="number in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].reverse()" v-bind:key="number">
                 <button class="btn btn-light text-center py-3 d-block w-100 rounded-0" type="button" v-on:click="addInOperand(number)">
@@ -24,22 +24,22 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-4 col-md-3">
             <button class="btn btn-info d-block w-100 rounded-0 py-3" type="button" v-on:click="space()" :disabled="currentOperand.length === 0">
               SPACE
             </button>
             <div class="row no-gutters">
-              <div class="col-md-6" v-for="operator in ['+', '-', '*', '/']" v-bind:key="operator">
+              <div class="col-6" v-for="operator in ['+', '-', '*', '/']" v-bind:key="operator">
                 <button class="btn btn-primary d-block w-100 rounded-0 py-3" type="button" v-on:click="space(); add(operator)" :disabled="!canAddOperator">
                   {{ operator }}
                 </button>
               </div>
-              <div class="col-md-6">
+              <div class="col-6">
                 <button class="btn btn-warning d-block w-100 rounded-0 py-3" type="button" v-on:click="clear()">
                   <i class="fas fa-backspace"></i>
                 </button>
               </div>
-              <div class="col-md-6">
+              <div class="col-6">
                 <button class="btn btn-success d-block w-100 rounded-0 py-3" type="button" v-on:click="calc()" :disabled="!isValid">
                   =
                 </button>
@@ -47,13 +47,13 @@
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6 mt-5">
             <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation" class="btn btn-outline-success text-center d-block w-100" title="What is RPN? (New window)">
               <i class="fas fa-book"></i> What is RPN?
             </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mt-5">
             <a href="https://github.com/jleveugle/reverse-polish-calculator" class="btn btn-outline-info text-center d-block w-100" title="GitHub (New window)">
               <i class="fab fa-github"></i> GitHub
             </a>
