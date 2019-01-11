@@ -54,7 +54,7 @@
             </a>
           </div>
           <div class="col-md-6">
-            <a href="https://github.com/jleveugle/reverse-polish-calculator" class="btn btn-outline-info text-center d-block w-100" title="Github (New window)">
+            <a href="https://github.com/jleveugle/reverse-polish-calculator" class="btn btn-outline-info text-center d-block w-100" title="GitHub (New window)">
               <i class="fab fa-github"></i> GitHub
             </a>
           </div>
