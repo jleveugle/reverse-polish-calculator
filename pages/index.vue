@@ -81,7 +81,6 @@ export default {
   },
   data: function () {
     return {
-      result: 0,
       stack: [],
       operation: [],
       currentOperand: '',
@@ -124,7 +123,6 @@ export default {
       this.currentOperand = '';
       this.stack = [];
       this.operation = [];
-      this.result = 0;
     },
     space() {
       if(this.currentOperand.length > 0) {
